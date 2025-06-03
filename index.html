@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="w-full h-screen flex justify-center items-center">
+
+  <div class="box w-[90%] sm:w-[70%] md:w-[50%] lg:w-[30%] xl:w-[20%] h-[50%] sm:h-[45%] md:h-[42%] lg:h-[40%] rounded-3xl flex justify-center items-center">
+
+    <form class="w-[95%] sm:w-[90%] md:w-[86%] h-[60%] sm:h-[55%] md:h-[50%] flex-col flex justify-around mt-3">
+
+      <div class="flex justify-between items-center">
+        <label for="Email">Email</label>
+        <input type="text" id="email" class="border rounded-2xl outline-none h-[36px] px-3 w-[60%] sm:w-[70%]" oninput="checkEmail()" placeholder="ex: h@gmail.com">
+      </div>
+
+      <div class="my-1">
+        <p class="error text-[15px] text-[red] font-[900]"></p>
+      </div>
+
+      <div class="flex justify-between items-center">
+        <label for="E">Password</label>
+        <input type="password" id="password" class="border rounded-2xl outline-none h-[36px] px-3 w-[60%] sm:w-[70%]" oninput="checkPass()" placeholder="Enter pass">
+      </div>
+
+      <div class="my-1">
+        <p class="error-pass text-[15px] text-[red] font-[900]"></p>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <button class="learn-more">Sign up</button>
+      </div>
+
+    </form>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
